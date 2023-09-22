@@ -15,4 +15,4 @@ use App\Http\Controllers\API\SquareRootController;
 |
 */
 
-Route::post('/square-root', [SquareRootController::class, 'post']);
+// Route::post('/square-root', [SquareRootController::class, 'post']);
