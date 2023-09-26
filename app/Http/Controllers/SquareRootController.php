@@ -30,7 +30,7 @@ class SquareRootController extends Controller
             try{
                 $mulai = hrtime(true);
                 $client = new Client();
-                $response = $client->post('http://localhost:8080/square-root', [
+                $response = $client->post(env('API_URL', 'http://localhost:8080').'/square-root', [
                     'form_params' => [
                         'input' => $validated['input']
                     ],
